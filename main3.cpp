@@ -1211,7 +1211,7 @@ void vistaVenta()
 	//Factura
 	float total=0;
 	int state=0;
-	int c;
+
 	
 	title();
 	
@@ -1301,7 +1301,7 @@ void vistaVenta()
 		venta.setCodVenta(venController->getCorrelativo());
 		venta.setCodPersonal(codPersonal);
 		venta.setCodCli(codCliente);
-		venta.setFecVen("21/12/2022");
+		venta.setFecVen(fecha);
 		venta.setTotVen(total);
 		venta.setEstVen(state);
 		venController->add(venta);
@@ -1313,7 +1313,7 @@ void vistaVenta()
 		venta.setCodVenta(venController->getCorrelativo());
 		venta.setCodPersonal(codPersonal);
 		venta.setCodCli(codCliente);
-		venta.setFecVen("21/12/2022");
+		venta.setFecVen(fecha);
 		venta.setTotVen(total);
 		venta.setEstVen(state);
 		venController->add(venta);
